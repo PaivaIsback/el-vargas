@@ -1,0 +1,752 @@
+html{display: flex }
+body{
+	margin:0;
+}
+#container{
+    margin:0;
+	width:100%;
+	height:3300px;
+	/*border:1px solid black;*/
+}
+
+/*#container-port{
+    margin:0;
+	width:100%;
+    background-color: yellow;
+    height: auto;
+}*/
+
+.menu{
+    position: fixed;
+    width: 100%;
+    line-height: 30px;
+    z-index: 3;
+}
+
+.menu ul{
+    line-height: 30px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+    
+}
+
+.menu.black ul{
+    background: #000;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 16px 40px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Dosis', sans-serif; 
+}
+
+.menu .contato{
+    background-color: rgba(247, 202, 24, 0.8);
+}
+
+
+@media screen and (min-width:401px) and (max-width: 800px){
+    .port-vargas-img div{
+        margin:0;
+    }
+    
+    .port-vargas-img{
+        padding: 0;
+    }
+    
+    .logo{
+        margin:25% 25% !important;
+    }
+    
+    .menu{
+        width: 202px;
+        margin-top:50px;
+        margin-left: -202px;
+        transition: .4s;
+        display: block;
+        
+    }
+    
+    .menu ul{
+        padding-right: 0;
+        text-align: left;
+    }
+    
+    .menu ul li{
+        display: block;
+    }
+    
+    label[for="bt-menu-mobile"]{
+        display: block !important;
+        z-index: 5;
+    }
+    
+    #bt-menu-mobile{
+        display: block;
+    }
+    
+    #bt-menu-mobile:checked ~ .menu{
+        margin-left: 0;
+    }
+    
+    #contato1{
+        width: 500px !important;
+        margin-left:100px !important;
+        float:left !important;
+    }
+    
+    #who{
+        margin-top: 35%;
+        margin-bottom:20% !important;
+    }
+    
+    #portifolio{
+        margin-top:30%;
+        height: 30% !important;
+    
+    }
+    
+    main{
+        height: 70% !important;
+        margin-top:20% 0 !important;
+        width: 100% !important;
+    }
+    
+    .container{
+        height: 3200px !important;
+    }
+
+    .vargas2{
+        display: none;
+        height: 0px !important; 
+    }
+    .logo1 img{
+        display: none;
+    }
+    .title, text{
+        display: inline !important;
+    }
+    
+    .lig-img-port{
+        float:left !important;
+    }
+    
+    .port-bottom{
+        margin-left: 40% !important;
+    }
+    
+}
+
+
+@media screen and (max-width: 400px){
+    
+    .port-vargas-img div{
+        margin:0;
+    }
+    
+    .port-vargas-img{
+        padding: 0;
+    }
+    
+    .logo{
+        margin:100px 30px !important;
+    }
+    
+    .menu{
+        width: 202px;
+        margin-top:50px;
+        margin-left: -202px;
+        transition: .4s;
+        display: block;
+        
+    }
+    
+    .menu ul{
+        padding-right: 0;
+        text-align: left;
+    }
+    
+    .menu ul li{
+        display: block;
+    }
+    
+    label[for="bt-menu-mobile"]{
+        display: block !important;
+        z-index: 5;
+    }
+    
+    #bt-menu-mobile{
+        display: block;
+    }
+    
+    #bt-menu-mobile:checked ~ .menu{
+        margin-left: 0;
+    }
+    
+    #contato1{
+        width: 500px !important;
+        margin-left:100px !important;
+        float:left !important;
+    }
+    
+    #who{
+        margin-top: 35%;
+        margin-bottom:20% !important;
+    }
+    
+    #portifolio{
+        margin-top:30%;
+        height: 30% !important;
+    
+    }
+    
+    main{
+        height: 70% !important;
+        margin-top:20% 0 !important;
+        width: 100% !important;
+    }
+    
+    .container{
+        height: 3200px !important;
+    }
+
+    .vargas2{
+        display: none;
+        height: 0px !important; 
+    }
+    
+    .logo1 img{
+        display: none;
+    }
+    
+    .title{
+        display: inline !important;
+    }
+    
+    text{
+        display: inline !important;
+        font-size:10px !important;
+    }
+    
+    .lig-img-port{
+        float:left !important;
+    }
+    
+    .port-bottom{
+        margin-left: 40% !important;
+    }
+    
+}
+
+
+label[for="bt-menu-mobile"]{
+    padding: 5px;
+    background-color: rgba(247, 202, 24, 0.8);
+    color:#fff;
+    font-size:30px;
+    text-align: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    float: left;
+    margin: 0;
+    display: none;
+}
+
+#bt-menu-mobile{
+    display: none;
+}
+    
+
+main{
+	width:90%;
+	height:50%;
+	margin: 0 auto 5% auto;
+	/*border:1px solid black;*/
+	
+}
+
+footer{
+    float:bottom;
+    background-color: #585858;
+    height: 80px;
+    width: 100%;
+    margin-top:10%;
+}
+footer p{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top:3.5%;
+    font-size:0.8em;
+    color:#1C1C1C;
+    text-decoration:underline;
+}
+
+#port-vargas-main{
+    width:90%;
+	height:40%;
+	margin: 0 auto 5% auto;
+}
+#vargas{
+	width:100%;
+	height:100%;
+	margin:0;
+}
+
+#portifolio{
+    width: 100%;
+    height: 35%;
+    margin:12% 0 15% 0 ;
+    background-color:rgba(247, 202, 24, 0.8);
+    padding-top: 5%;
+    /*border:1px solid black;*/
+
+}
+
+.port-bottom{
+    display: inline-block;
+    /*border:1px solid white;*/
+    font-size:20px;
+    border-radius:30px;
+    padding:15px 25px;
+    margin-left:25%;
+    margin-top:5%;
+    text-align: center;
+    color: #fff;
+    background-color:black;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.port-bottom a{
+    text-decoration: none;
+    color:#fff
+}
+
+.port-bottom a:hover{
+    color:#000;
+}
+
+.port-bottom:hover{
+    background-color: rgba(0,0,0,0);
+    color:black;
+    border:1px solid black;
+    
+}
+
+.galery-port{
+    margin-left:5%;
+    width: 40%;
+    height: 100%;
+    float:right;
+    /*border:1px solid black;*/
+    position:relative;
+    
+}
+
+#who{
+    width:100%;
+    height: 20%;
+    margin:45% 0 25% 0;
+    transition:0.8s;
+    /*border:1px solid black;*/
+}
+
+.icon{
+    margin-top:20px;
+    display: inline;
+    width: 40%;
+}
+
+.icon img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon a{
+    font-size:1.2em;
+    text-decoration: none;
+    color:black;
+}
+
+.icon:hover{
+    opacity: 0.8;
+}
+
+.logo1{
+	margin-left:2%;
+	float:left;
+	position:fixed;
+    z-index:4;
+    width: 20%;
+   
+}
+.logo{
+	margin:20% 35%;
+	float:top;
+	position:absolute;
+    max-width: 700px;
+    z-index: 2;
+}
+.logo img{
+    width:70%;
+    height:70%;
+    min-width: 320px;
+}
+
+
+.photoVargas{
+	background-image:url(../imagens/vargas-photo.jpg);
+	width:30%;
+	height:350px;
+	/*border:1px solid black;*/
+	position:relative;
+	background-size: cover;
+	border-radius:300px;
+	float:left;
+	margin-right:5%;
+    margin-left: 10%;
+	min-width: 350px;
+    transition:.6s;
+
+}
+
+.photoVargas:hover{
+    transform: scale(1.05);
+}
+
+#top {
+	width:100%;
+	height:20%;
+	margin:0;	
+}
+
+.top-port{
+    width:100%;
+    margin:0;
+}
+
+
+.title{
+    font-family: 'Oswald', sans-serif;
+    font-size:2em;
+    padding-left: 10%;
+    text-align: center;
+    display: inline-block;
+    margin-bottom:5%;
+}
+
+.text{
+    display: block;
+    padding-left:5%;
+    padding-right: 5%;
+    font-size:1.2em;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.lig-img-port{
+    width:30%;
+    height: 350px;
+    float: right;
+    border-radius:300px;
+    background-image: url(../imagens/photo-glr-main.jpg);
+    background-size:cover;
+    margin: 5%;
+    min-width: 350px;
+    transition: .6s;
+    background-position: center;
+    position:relative
+}
+
+.lig-img-port:hover{
+    transform: scale(1.05)
+}
+
+.vargas2{
+    width:40%;
+    float:left;
+    margin-left:5%;
+    margin-top:2%;
+    min-height: 700px;
+    background-image: url(../imagens/andry.jpg);
+    background-size:cover;
+    transition:.6s;
+}
+
+.vargas2:hover{
+    transform: scale(1.05)
+}
+
+
+
+
+
+
+form {
+    margin-top:5%;
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    background-color:#000;
+    max-width: 500px;
+    float:right;
+    border-radius:10px;
+} 
+
+form h1{
+    color:#fff;
+    margin:5%;
+    text-align: center;
+    font-family: 'Dosis', sans-serif; 
+}
+ 
+input, textarea {
+    width: 440px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    border-radius:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid black;
+}
+ 
+.submit input {
+    border-radius: 100px;
+    background-color: #fff;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border: 1px solid black;
+    color: #000;
+    transition: 0.4s;
+}
+ 
+.submit input:hover{
+    background-color: rgba(0,0,0,0);
+    border:1px solid #fff;
+    color: #fff;
+    
+    
+}
+
+textarea {
+    width: 90%;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+    margin-top:5%;
+}
+ 
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+
+#contato1{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 30%;       
+}
+
+.port-vargas-img{
+    margin-top:10%;
+    font-size: 0;
+    display: -ms-flexbox;
+    -webkit-flex-flow:row wrap;
+    /*flex-flow:row wrap;*/
+    display:  -webkit-box;
+    display: flex;
+    /*border:1px solid black;*/
+}
+
+.port-vargas-img div{
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;    
+}
+
+.port-vargas-img div img{
+    width: 100%;
+    height: auto;
+    transition: .3s;
+}
+
+.port-vargas-img div img:hover{
+    width: 210px;
+}
+
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+  min-width: 400px;
+}
+
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10%;
+  right: 25%;
+  font-size: 35px;
+  font-weight: bold;
+   z-index: 4;
+}
+
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+slider{
+    display: block;
+    width: 100%; 
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+slider > * {
+    position: absolute;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide:nth-child(1){
+    left:0%;
+    animation-delay: -1s;
+    background-image: url(../imagens/foto1.jpg);
+    background-size:cover;
+    background-position:top left;
+    
+}
+
+slide:nth-child(2){
+    animation-delay: 2s;
+    background-image: url(../imagens/foto2.jpg);
+    background-size:cover;
+    background-position:top left;
+}
+
+slide:nth-child(3){
+    animation-delay: 5s;
+    background-image: url(../imagens/foto3.jpg);
+    background-size:cover;
+    background-position:top right;
+}
+
+slide:nth-child(4){
+    animation-delay: 8s;
+    background-image: url(../imagens/foto4.jpg);
+    background-size:cover;
+    background-position:top left;
+}
+
+@keyframes slide{
+    0%{left:100%;width: 100%;}
+    5%{left: 0%}
+    25%{left: 0%}
+    30%{left:-100%;width:100%}
+    30.0001%{left: -100%;width: 0%}
+    100%{left: 100%;width: 0%}
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+

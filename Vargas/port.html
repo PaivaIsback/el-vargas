@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<title>Início</title>
+	<meta charset="utf-8">
+	<meta name="author" content="O Paiva">
+	<meta name="description" content="ALGUMA COISA SOBRE O JOÃO">
+	<meta name="keywords" content="foto, fotografia,etc">
+	
+    <link rel="icon" href="imagens/logo-black.png" type="image/icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+   
+</head>
+
+<body>
+    <header class="top-port">
+    <div class="logo1">
+         <img src="imagens/elvargas.png" style="width:40%;height:40%">
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html">Quem Sou</a></li>
+            <li><a href="index.html">Portifólio</a></li>
+            <li class="contato"><a href="index.html">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+<div id="container-port">
+    
+    
+
+	<main id="port-vargas-main">
+		<section class="port-vargas-img">
+            <div><img src="imagens/photo-001.jpg" onclick="openModal();currentSlide(1)"></div>
+            <div><img src="imagens/photo-002.jpg" onclick="openModal();currentSlide(2)"></div>
+            <div><img src="imagens/photo-003.jpg" onclick="openModal();currentSlide(3)"></div>
+            <div><img src="imagens/photo-004.jpg" onclick="openModal();currentSlide(4)"></div>
+            <div><img src="imagens/photo-005.jpg" onclick="openModal();currentSlide(5)"></div>
+            <div><img src="imagens/photo-006.jpg" onclick="openModal();currentSlide(6)"></div>
+            <div><img src="imagens/photo-007.jpg" onclick="openModal();currentSlide(7)"></div>
+            <div><img src="imagens/photo-008.jpg" onclick="openModal();currentSlide(8)"></div>
+            <div><img src="imagens/photo-009.jpg" onclick="openModal();currentSlide(9)"></div>
+            <div><img src="imagens/photo-010.jpg" onclick="openModal();currentSlide(10)"></div>
+            <div><img src="imagens/photo-011.jpg" onclick="openModal();currentSlide(11)"></div>
+            <div><img src="imagens/photo-012.jpg" onclick="openModal();currentSlide(12)"></div>
+            <div><img src="imagens/photo-013.jpg" onclick="openModal();currentSlide(13)"></div>
+            <div><img src="imagens/photo-015.jpg" onclick="openModal();currentSlide(14)"></div>
+            <div><img src="imagens/photo-016.jpg" onclick="openModal();currentSlide(15)"></div>
+            
+        </section>	
+        
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides"><img src="imagens/photo-001.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-002.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-003.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-004.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-005.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-006.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-007.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-008.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-009.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-010.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-011.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-012.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-013.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-015.jpg" style="width:100%"></div>
+                <div class="mySlides"><img src="imagens/photo-016.jpg" style="width:100%"></div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+	</main>
+</div>
+	
+	<script>
+        
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').addClass('black');
+            }
+        })  
+    
+        
+        
+        function openModal() {
+          document.getElementById('myModal').style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+          document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+
+        }
+
+	</script>
+		
+<footer>
+        <p>El Vargas<br>
+        Copyright &copy; 2019. Todos os direitos reservados.</p>
+</footer>
+</body>
+
+</html>

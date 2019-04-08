@@ -1,0 +1,155 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<title>Início</title>
+	<meta charset="utf-8">
+	<meta name="author" content="O Paiva">
+	<meta name="description" content="ALGUMA COISA SOBRE O JOÃO">
+	<meta name="keywords" content="foto, fotografia,etc">
+	
+    
+    <link rel="icon" href="imagens/logo-black.png" type="image/icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+   
+</head>
+
+<body>
+<div id="container">
+
+	<header id="top">
+           <input type="checkbox" id="bt-menu-mobile">
+            <label for="bt-menu-mobile">&#9776;</label>
+   
+		<div class="logo1">
+			<img src="imagens/elvargas.png" style="width:40%;height:40%">
+		</div>
+        
+        
+		<nav class="menu">
+			<ul>
+				<li><a href="#top">Início</a></li>
+				<li><a href="#who">Quem Sou</a></li>
+				<li><a href="#portifolio">Portifólio</a></li>
+				<li class="contato"><a href="#contato1">Contato</a></li>
+               
+			</ul>
+		</nav>
+		
+		<div class="logo">
+		  <img src="imagens/logo.png">
+		
+		</div>
+		
+        <slider>
+            <slide></slide>
+            <slide></slide>
+            <slide></slide>
+            <slide></slide>
+        </slider>
+		
+	</header>
+	
+	<main>
+		<!--Quem sou-->
+		<section id="who">
+		
+			<article>
+			<div class="photoVargas">
+				
+			</div>
+			
+				<h1><span class="title">Quem sou...</span></h1>
+				<p class="text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+                <div class="icon"><img src="imagens/black-icon-fb.png"><a href="https://www.facebook.com/joaovitordasilva.vargas">/joaovitordasilva.varga</a></div>
+                
+               <div class="icon"><img src="imagens/black-icon-insta.png"><a href="https://www.instagram.com/el_vargas/">El_vargas</a></div>
+                
+			</article>
+			
+		</section>
+		<!--portifolio-->
+		<section id="portifolio">
+            <div class="lig-img-port"></div>
+			<article>
+                
+                <h1><span class="title">Um pouco do meu trampo...</span></h1>
+				<p class="text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+			</article>
+            <bottom type="bottom" class="port-bottom"><a href="port.html" style="">Portifólio</a></bottom>
+		</section>
+		
+		<!--contato-->
+		<section id="contato1">
+			
+			<form name="meu_form">
+ 
+                <h1>Entre em contato</h1>
+ 
+                <p class="nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nomeid" placeholder="João" required="required" name="nome" />
+                </p>
+                <p class="fone">
+                    <label for="fone">Fone: </label>
+                    <input type="text" id="foneid" placeholder="( 051 ) 99999-8888" name="fone" />
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="emailid" placeholder="joao@mail.com" name="email" />
+                </p>
+                <p>
+                    <label for="mensage">Mensagem:</label>
+                    <textarea placeholder="Deixe aqui "></textarea>
+                </p>
+                <p class="submit">
+                    <input type="submit" onclick="Enviar();" value="Enviar" />
+                </p>
+ 
+            </form>
+            
+            <div class="vargas2"></div>
+            
+		</section>
+		
+	</main>
+	
+	<script>
+  
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+            $('nav').addClass('black');
+        }
+
+        else {
+            $('nav').removeClass('black');
+        }
+    })
+        
+    $('nav a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 700);  
+    });
+    
+        
+
+	</script>
+ 
+</div>
+		
+<footer>
+        <p>El Vargas<br>
+        Copyright &copy; 2019. Todos os direitos reservados.</p>
+</footer>
+</body>
+
+</html>
